@@ -1,16 +1,11 @@
 a,b,c = map(int, input().split())
 
-x = 1
-y = 0
-
-if b % a == 0 and a < b and c % a == 0 and a < c:
-    res1 = x
+if a <= b and a <= c:
+	print("1", end=" ")
 else:
-    res1 = y
+	print("0", end=" ")
 
-if a == b and a == c:
-    res2 = x
+if a == b and b == c:
+	print("1")
 else:
-    res2 = y
-
-print(res1,res2)
+	print("0")
