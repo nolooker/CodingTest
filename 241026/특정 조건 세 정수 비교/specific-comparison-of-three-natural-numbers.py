@@ -3,7 +3,7 @@ a,b,c = map(int, input().split())
 x = 1
 y = 0
 
-if b % a == 0 and c % a == 0:
+if b % a == 0 and a < b and c % a == 0 and a < c:
     res1 = x
 else:
     res1 = y
