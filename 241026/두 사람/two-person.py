@@ -6,11 +6,7 @@ a2 = int(a2)
 
 result = 0
 
-if a1 >= 19 and b1 == "M" and a2 >= 19 and b2 =="M":
-    result = 1
-elif a1 >= 19 and b1 == "M":
-    result = 1
-elif a2 >= 19 and b2 == "M":
+if (a1 >= 19 and b1 == "M") or (a2 >= 19 and b2 =="M"):
     result = 1
 else:
     result = 0
