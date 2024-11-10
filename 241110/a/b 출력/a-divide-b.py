@@ -9,7 +9,7 @@ a, b = map(int, input().split())
 # 실수 계산
 result = Decimal(a) / Decimal(b)
 
-# 소수점 21번째 자리까지 내림
+# 소수점 20번째 자리까지 내림
 formatted_result = result.quantize(Decimal('1.00000000000000000000'), rounding='ROUND_DOWN')
 
 # 출력
